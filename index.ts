@@ -11,8 +11,9 @@ app.post("/", (req, res) => {
 });
 
 app.post("/hi", function (req, res) {
+  console.log(req.user_name);
   const result = {
-    text: "하이 하이",
+    text: `${req.user_name}님 하이 하이`,
   };
   res.send(result);
 });
