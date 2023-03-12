@@ -11,7 +11,6 @@ app.post("/", (req, res) => {
 });
 
 app.post("/hi", function (req, res) {
-  console.log(req);
   const result = {
     text: "하이 하이",
   };
