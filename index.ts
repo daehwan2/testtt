@@ -13,7 +13,7 @@ app.post("/", (req, res) => {
 app.post("/hi", function (req, res) {
   console.log("요청왓음");
   const result = {
-    text: "It's 80 degrees right now.",
+    text: "하이 하이",
   };
   res.send(result);
 });
