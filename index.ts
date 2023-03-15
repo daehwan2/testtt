@@ -12,7 +12,7 @@ app.post("/", (req, res) => {
   res.send("hello");
 });
 
-app.post("list",(req, res)=>{
+app.post("/list",(req, res)=>{
   const str = lunchList.join();
   const result = {
     text: str,
