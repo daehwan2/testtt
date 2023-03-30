@@ -17,6 +17,7 @@ app.post("/list",(req, res)=>{
   console.log(str);
   const result = {
     text: `점심 리스트: ${str}`,
+    response_type: "in_channel"
   };
   res.send(result);
 })
@@ -27,6 +28,7 @@ app.post("/hi", function (req, res) {
   const randomIndex = Math.floor(Math.random() * lunchList.length);
   const result = {
     text: `오늘의 점심은 ${lunchList[randomIndex]}!!`,
+    response_type: "in_channel"
   };
   res.send(result);
 });
